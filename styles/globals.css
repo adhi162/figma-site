@@ -1,0 +1,410 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #fafaf9;
+  --foreground: #1c1c1c;
+  --card: #ffffff;
+  --card-foreground: #1c1c1c;
+  --popover: #ffffff;
+  --popover-foreground: #1c1c1c;
+  --primary: #2c3530;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f4;
+  --secondary-foreground: #1c1c1c;
+  --muted: #f5f5f4;
+  --muted-foreground: #6b7280;
+  --accent: #f5f5f4;
+  --accent-foreground: #1c1c1c;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  --input: transparent;
+  --input-background: #f9fafb;
+  --switch-background: #e5e7eb;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #2c3530;
+  --chart-1: #8b9d83;
+  --chart-2: #b8a082;
+  --chart-3: #6b7565;
+  --chart-4: #d4c4a8;
+  --chart-5: #9ca394;
+  --radius: 0.75rem;
+  --sidebar: #fafaf9;
+  --sidebar-foreground: #1c1c1c;
+  --sidebar-primary: #2c3530;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5f5f4;
+  --sidebar-accent-foreground: #1c1c1c;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --sidebar-ring: #2c3530;
+
+  /* ARCHLEVE Brand Colors */
+  --archleve-primary-green: #485954;
+  --archleve-sage: #8b9d83;
+  --archleve-warm-beige: #d4c4a8;
+  --archleve-cream: #f7f3eb;
+  --archleve-deep-forest: #2c3530;
+  --archleve-olive: #6b7565;
+  --archleve-gold: #b8a082;
+  --archleve-stone: #9ca394;
+  --archleve-charcoal: #3a3f3b;
+  --archleve-soft-white: #fefefe;
+  --archleve-neutral: #8e9089;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafaf9;
+  --card: #1a1a1a;
+  --card-foreground: #fafaf9;
+  --popover: #1a1a1a;
+  --popover-foreground: #fafaf9;
+  --primary: #8b9d83;
+  --primary-foreground: #1a1a1a;
+  --secondary: #262626;
+  --secondary-foreground: #fafaf9;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #262626;
+  --accent-foreground: #fafaf9;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafaf9;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: #262626;
+  --ring: #8b9d83;
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #fafaf9;
+  --sidebar-primary: #8b9d83;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #262626;
+  --sidebar-accent-foreground: #fafaf9;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #8b9d83;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ARCHLEVE Brand Colors */
+  --color-archleve-primary-green: var(--archleve-primary-green);
+  --color-archleve-sage: var(--archleve-sage);
+  --color-archleve-warm-beige: var(--archleve-warm-beige);
+  --color-archleve-cream: var(--archleve-cream);
+  --color-archleve-deep-forest: var(--archleve-deep-forest);
+  --color-archleve-olive: var(--archleve-olive);
+  --color-archleve-gold: var(--archleve-gold);
+  --color-archleve-stone: var(--archleve-stone);
+  --color-archleve-charcoal: var(--archleve-charcoal);
+  --color-archleve-soft-white: var(--archleve-soft-white);
+  --color-archleve-neutral: var(--archleve-neutral);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-archleve-deep-forest text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+  }
+
+  html {
+    background-color: var(--color-archleve-deep-forest);
+    overflow-x: hidden;
+  }
+}
+
+/**
+ * Base typography with refined spacing and weights
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      font-family: 'Inter', sans-serif;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      font-family: 'Inter', sans-serif;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      font-family: 'Inter', sans-serif;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+    }
+
+    label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+    }
+
+    button {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.005em;
+      font-family: 'Inter', sans-serif;
+    }
+
+    input {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-5deg) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* Custom utility classes for the refined brand colors */
+@layer utilities {
+  .bg-archleve-primary-green { background-color: var(--color-archleve-primary-green); }
+  .bg-archleve-sage { background-color: var(--color-archleve-sage); }
+  .bg-archleve-warm-beige { background-color: var(--color-archleve-warm-beige); }
+  .bg-archleve-cream { background-color: var(--color-archleve-cream); }
+  .bg-archleve-deep-forest { background-color: var(--color-archleve-deep-forest); }
+  .bg-archleve-olive { background-color: var(--color-archleve-olive); }
+  .bg-archleve-gold { background-color: var(--color-archleve-gold); }
+  .bg-archleve-stone { background-color: var(--color-archleve-stone); }
+  .bg-archleve-charcoal { background-color: var(--color-archleve-charcoal); }
+  .bg-archleve-soft-white { background-color: var(--color-archleve-soft-white); }
+  .bg-archleve-neutral { background-color: var(--color-archleve-neutral); }
+
+  .text-archleve-primary-green { color: var(--color-archleve-primary-green); }
+  .text-archleve-sage { color: var(--color-archleve-sage); }
+  .text-archleve-warm-beige { color: var(--color-archleve-warm-beige); }
+  .text-archleve-cream { color: var(--color-archleve-cream); }
+  .text-archleve-deep-forest { color: var(--color-archleve-deep-forest); }
+  .text-archleve-olive { color: var(--color-archleve-olive); }
+  .text-archleve-gold { color: var(--color-archleve-gold); }
+  .text-archleve-stone { color: var(--color-archleve-stone); }
+  .text-archleve-charcoal { color: var(--color-archleve-charcoal); }
+  .text-archleve-soft-white { color: var(--color-archleve-soft-white); }
+  .text-archleve-neutral { color: var(--color-archleve-neutral); }
+
+  .border-archleve-primary-green { border-color: var(--color-archleve-primary-green); }
+  .border-archleve-sage { border-color: var(--color-archleve-sage); }
+  .border-archleve-warm-beige { border-color: var(--color-archleve-warm-beige); }
+  .border-archleve-cream { border-color: var(--color-archleve-cream); }
+  .border-archleve-deep-forest { border-color: var(--color-archleve-deep-forest); }
+  .border-archleve-olive { border-color: var(--color-archleve-olive); }
+  .border-archleve-gold { border-color: var(--color-archleve-gold); }
+  .border-archleve-stone { border-color: var(--color-archleve-stone); }
+  .border-archleve-charcoal { border-color: var(--color-archleve-charcoal); }
+  .border-archleve-soft-white { border-color: var(--color-archleve-soft-white); }
+  .border-archleve-neutral { border-color: var(--color-archleve-neutral); }
+
+  /* Refined scroll animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-fade-in-left {
+    animation: fadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-fade-in-right {
+    animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-slide-in-up {
+    animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-rotate-in {
+    animation: rotateIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* Stagger delays */
+  .animate-delay-100 { animation-delay: 0.1s; }
+  .animate-delay-200 { animation-delay: 0.2s; }
+  .animate-delay-300 { animation-delay: 0.3s; }
+  .animate-delay-400 { animation-delay: 0.4s; }
+  .animate-delay-500 { animation-delay: 0.5s; }
+  .animate-delay-600 { animation-delay: 0.6s; }
+
+  /* Initial hidden state */
+  .animate-hidden {
+    opacity: 0;
+  }
+
+  /* Refined parallax effect */
+  .parallax {
+    transform: translateY(var(--parallax-offset, 0));
+    transition: transform 0.1s linear;
+  }
+
+  /* Brand-specific gradients */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, var(--color-archleve-cream) 0%, var(--color-archleve-warm-beige) 100%);
+  }
+
+  .bg-brand-gradient-dark {
+    background: linear-gradient(135deg, var(--color-archleve-deep-forest) 0%, var(--color-archleve-charcoal) 100%);
+  }
+}
