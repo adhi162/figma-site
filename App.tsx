@@ -20,8 +20,8 @@ export default function App() {
         setShowMain(true);
         // Smooth scroll to main content after transition
         setTimeout(() => {
-          document.getElementById('main-content')?.scrollIntoView({ 
-            behavior: 'smooth' 
+          document.getElementById('main-content')?.scrollIntoView({
+            behavior: 'smooth'
           });
         }, 300);
       }
@@ -32,8 +32,8 @@ export default function App() {
         e.preventDefault();
         setShowMain(true);
         setTimeout(() => {
-          document.getElementById('main-content')?.scrollIntoView({ 
-            behavior: 'smooth' 
+          document.getElementById('main-content')?.scrollIntoView({
+            behavior: 'smooth'
           });
         }, 300);
       }
@@ -61,7 +61,7 @@ export default function App() {
       )}
 
       {/* Main Content */}
-      <div 
+      <div
         id="main-content"
         className={`transition-opacity duration-300 ${showMain ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       >

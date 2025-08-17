@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -124,9 +120,13 @@
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary-foreground: var(
+    --sidebar-primary-foreground
+  );
   --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent-foreground: var(
+    --sidebar-accent-foreground
+  );
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
@@ -151,7 +151,12 @@
 
   body {
     @apply bg-archleve-deep-forest text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
     letter-spacing: -0.01em;
     overflow-x: hidden;
   }
@@ -166,13 +171,15 @@
  * Base typography with refined spacing and weights
  */
 @layer base {
-  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+  :where(
+    :not(:has([class*=" text-"]), :not(:has([class^="text-"])))
+  ) {
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
       line-height: 1.2;
       letter-spacing: -0.02em;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     h2 {
@@ -180,7 +187,7 @@
       font-weight: 600;
       line-height: 1.3;
       letter-spacing: -0.01em;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     h3 {
@@ -188,28 +195,28 @@
       font-weight: 600;
       line-height: 1.4;
       letter-spacing: -0.01em;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     h4 {
       font-size: 1.25rem;
       font-weight: 500;
       line-height: 1.5;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     p {
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.6;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     label {
       font-size: 0.875rem;
       font-weight: 500;
       line-height: 1.5;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     button {
@@ -217,21 +224,21 @@
       font-weight: 500;
       line-height: 1.5;
       letter-spacing: 0.005em;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
 
     input {
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
     }
   }
 }
 
 html {
   font-size: var(--font-size);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -315,78 +322,163 @@ html {
 
 /* Custom utility classes for the refined brand colors */
 @layer utilities {
-  .bg-archleve-primary-green { background-color: var(--color-archleve-primary-green); }
-  .bg-archleve-sage { background-color: var(--color-archleve-sage); }
-  .bg-archleve-warm-beige { background-color: var(--color-archleve-warm-beige); }
-  .bg-archleve-cream { background-color: var(--color-archleve-cream); }
-  .bg-archleve-deep-forest { background-color: var(--color-archleve-deep-forest); }
-  .bg-archleve-olive { background-color: var(--color-archleve-olive); }
-  .bg-archleve-gold { background-color: var(--color-archleve-gold); }
-  .bg-archleve-stone { background-color: var(--color-archleve-stone); }
-  .bg-archleve-charcoal { background-color: var(--color-archleve-charcoal); }
-  .bg-archleve-soft-white { background-color: var(--color-archleve-soft-white); }
-  .bg-archleve-neutral { background-color: var(--color-archleve-neutral); }
+  .bg-archleve-primary-green {
+    background-color: var(--color-archleve-primary-green);
+  }
+  .bg-archleve-sage {
+    background-color: var(--color-archleve-sage);
+  }
+  .bg-archleve-warm-beige {
+    background-color: var(--color-archleve-warm-beige);
+  }
+  .bg-archleve-cream {
+    background-color: var(--color-archleve-cream);
+  }
+  .bg-archleve-deep-forest {
+    background-color: var(--color-archleve-deep-forest);
+  }
+  .bg-archleve-olive {
+    background-color: var(--color-archleve-olive);
+  }
+  .bg-archleve-gold {
+    background-color: var(--color-archleve-gold);
+  }
+  .bg-archleve-stone {
+    background-color: var(--color-archleve-stone);
+  }
+  .bg-archleve-charcoal {
+    background-color: var(--color-archleve-charcoal);
+  }
+  .bg-archleve-soft-white {
+    background-color: var(--color-archleve-soft-white);
+  }
+  .bg-archleve-neutral {
+    background-color: var(--color-archleve-neutral);
+  }
 
-  .text-archleve-primary-green { color: var(--color-archleve-primary-green); }
-  .text-archleve-sage { color: var(--color-archleve-sage); }
-  .text-archleve-warm-beige { color: var(--color-archleve-warm-beige); }
-  .text-archleve-cream { color: var(--color-archleve-cream); }
-  .text-archleve-deep-forest { color: var(--color-archleve-deep-forest); }
-  .text-archleve-olive { color: var(--color-archleve-olive); }
-  .text-archleve-gold { color: var(--color-archleve-gold); }
-  .text-archleve-stone { color: var(--color-archleve-stone); }
-  .text-archleve-charcoal { color: var(--color-archleve-charcoal); }
-  .text-archleve-soft-white { color: var(--color-archleve-soft-white); }
-  .text-archleve-neutral { color: var(--color-archleve-neutral); }
+  .text-archleve-primary-green {
+    color: var(--color-archleve-primary-green);
+  }
+  .text-archleve-sage {
+    color: var(--color-archleve-sage);
+  }
+  .text-archleve-warm-beige {
+    color: var(--color-archleve-warm-beige);
+  }
+  .text-archleve-cream {
+    color: var(--color-archleve-cream);
+  }
+  .text-archleve-deep-forest {
+    color: var(--color-archleve-deep-forest);
+  }
+  .text-archleve-olive {
+    color: var(--color-archleve-olive);
+  }
+  .text-archleve-gold {
+    color: var(--color-archleve-gold);
+  }
+  .text-archleve-stone {
+    color: var(--color-archleve-stone);
+  }
+  .text-archleve-charcoal {
+    color: var(--color-archleve-charcoal);
+  }
+  .text-archleve-soft-white {
+    color: var(--color-archleve-soft-white);
+  }
+  .text-archleve-neutral {
+    color: var(--color-archleve-neutral);
+  }
 
-  .border-archleve-primary-green { border-color: var(--color-archleve-primary-green); }
-  .border-archleve-sage { border-color: var(--color-archleve-sage); }
-  .border-archleve-warm-beige { border-color: var(--color-archleve-warm-beige); }
-  .border-archleve-cream { border-color: var(--color-archleve-cream); }
-  .border-archleve-deep-forest { border-color: var(--color-archleve-deep-forest); }
-  .border-archleve-olive { border-color: var(--color-archleve-olive); }
-  .border-archleve-gold { border-color: var(--color-archleve-gold); }
-  .border-archleve-stone { border-color: var(--color-archleve-stone); }
-  .border-archleve-charcoal { border-color: var(--color-archleve-charcoal); }
-  .border-archleve-soft-white { border-color: var(--color-archleve-soft-white); }
-  .border-archleve-neutral { border-color: var(--color-archleve-neutral); }
+  .border-archleve-primary-green {
+    border-color: var(--color-archleve-primary-green);
+  }
+  .border-archleve-sage {
+    border-color: var(--color-archleve-sage);
+  }
+  .border-archleve-warm-beige {
+    border-color: var(--color-archleve-warm-beige);
+  }
+  .border-archleve-cream {
+    border-color: var(--color-archleve-cream);
+  }
+  .border-archleve-deep-forest {
+    border-color: var(--color-archleve-deep-forest);
+  }
+  .border-archleve-olive {
+    border-color: var(--color-archleve-olive);
+  }
+  .border-archleve-gold {
+    border-color: var(--color-archleve-gold);
+  }
+  .border-archleve-stone {
+    border-color: var(--color-archleve-stone);
+  }
+  .border-archleve-charcoal {
+    border-color: var(--color-archleve-charcoal);
+  }
+  .border-archleve-soft-white {
+    border-color: var(--color-archleve-soft-white);
+  }
+  .border-archleve-neutral {
+    border-color: var(--color-archleve-neutral);
+  }
 
   /* Refined scroll animation classes */
   .animate-fade-in-up {
-    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .animate-fade-in-down {
-    animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .animate-fade-in-left {
-    animation: fadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .animate-fade-in-right {
-    animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .animate-slide-in-up {
-    animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .animate-rotate-in {
-    animation: rotateIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: rotateIn 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   /* Stagger delays */
-  .animate-delay-100 { animation-delay: 0.1s; }
-  .animate-delay-200 { animation-delay: 0.2s; }
-  .animate-delay-300 { animation-delay: 0.3s; }
-  .animate-delay-400 { animation-delay: 0.4s; }
-  .animate-delay-500 { animation-delay: 0.5s; }
-  .animate-delay-600 { animation-delay: 0.6s; }
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+  .animate-delay-500 {
+    animation-delay: 0.5s;
+  }
+  .animate-delay-600 {
+    animation-delay: 0.6s;
+  }
 
   /* Initial hidden state */
   .animate-hidden {
@@ -401,10 +493,18 @@ html {
 
   /* Brand-specific gradients */
   .bg-brand-gradient {
-    background: linear-gradient(135deg, var(--color-archleve-cream) 0%, var(--color-archleve-warm-beige) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--color-archleve-cream) 0%,
+      var(--color-archleve-warm-beige) 100%
+    );
   }
 
   .bg-brand-gradient-dark {
-    background: linear-gradient(135deg, var(--color-archleve-deep-forest) 0%, var(--color-archleve-charcoal) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--color-archleve-deep-forest) 0%,
+      var(--color-archleve-charcoal) 100%
+    );
   }
 }

@@ -31,11 +31,10 @@ const Header = ({ isScrolled = false }: HeaderProps) => {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-archleve-soft-white/95 backdrop-blur-sm border-b border-archleve-sage/20 shadow-sm transition-all duration-300 ease-out ${
-      isScrolled 
-        ? 'transform translate-y-0 opacity-100' 
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-archleve-soft-white/95 backdrop-blur-sm border-b border-archleve-sage/20 shadow-sm transition-all duration-300 ease-out ${isScrolled
+        ? 'transform translate-y-0 opacity-100'
         : 'transform -translate-y-full opacity-0'
-    }`}>
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -61,14 +60,14 @@ const Header = ({ isScrolled = false }: HeaderProps) => {
               </a>
             ))}
             <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-archleve-sage/30">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="sm"
                 className="border-archleve-primary-green text-archleve-primary-green hover:bg-archleve-primary-green hover:text-archleve-soft-white transition-all duration-300"
               >
                 Login
               </Button>
-              <Button 
+              <Button
                 size="sm"
                 className="bg-archleve-gold hover:bg-archleve-gold/90 text-archleve-soft-white transition-all duration-300 shadow-sm"
               >
@@ -90,11 +89,10 @@ const Header = ({ isScrolled = false }: HeaderProps) => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen 
-            ? 'max-h-96 opacity-100 pb-6' 
+        <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen
+            ? 'max-h-96 opacity-100 pb-6'
             : 'max-h-0 opacity-0 overflow-hidden'
-        }`}>
+          }`}>
           <nav className="flex flex-col space-y-4 pt-4 border-t border-archleve-sage/20">
             {navigationItems.map((item) => (
               <a
@@ -107,14 +105,14 @@ const Header = ({ isScrolled = false }: HeaderProps) => {
               </a>
             ))}
             <div className="flex flex-col space-y-3 pt-4 border-t border-archleve-sage/20">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="sm"
                 className="border-archleve-primary-green text-archleve-primary-green hover:bg-archleve-primary-green hover:text-archleve-soft-white transition-all duration-300"
               >
                 Login
               </Button>
-              <Button 
+              <Button
                 size="sm"
                 className="bg-archleve-gold hover:bg-archleve-gold/90 text-archleve-soft-white transition-all duration-300"
               >

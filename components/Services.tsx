@@ -60,7 +60,7 @@ const Services = () => {
         {/* Services Grid */}
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
+            <Card
               key={index}
               className={`group hover:shadow-xl transition-all duration-500 hover:transform hover:-translate-y-2 border-0 shadow-md bg-archleve-warm-beige hover:bg-archleve-gold ${getItemClassName(index)}`}
             >

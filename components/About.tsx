@@ -49,7 +49,7 @@ const About = () => {
           <div ref={imageAnimation.ref} className={`relative ${imageAnimation.className}`}>
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-archleve-deep-forest/20 group">
               <ImageWithFallback
-                src="https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg"
+                src="https://images.unsplash.com/photo-1718209962486-4f91ce71886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjB0ZWFtJTIwY29uc3RydWN0aW9uJTIwd29ya2Vyc3xlbnwxfHx8fDE3NTUyNzA0MzN8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Archleve construction team at work"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

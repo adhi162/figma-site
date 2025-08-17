@@ -16,42 +16,42 @@ const Portfolio = () => {
       id: 1,
       title: 'Modern Family Home',
       category: 'Residential',
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg',
+      image: 'https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBob3VzZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc1NTE4NjY2OHww&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Contemporary design with sustainable materials and smart home integration.'
     },
     {
       id: 2,
       title: 'Corporate Office Space',
       category: 'Commercial',
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg',
+      image: 'https://images.unsplash.com/photo-1703355685639-d558d1b0f63e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjBvZmZpY2UlMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwxfHx8fDE3NTUxNzg5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Innovative workspace design promoting collaboration and productivity.'
     },
     {
       id: 3,
       title: 'Luxury Apartment',
       category: 'Interior Design',
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg',
+      image: 'https://images.unsplash.com/photo-1610879485443-c472257793d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBsaXZpbmclMjByb29tfGVufDF8fHx8MTc1NTIwNzc4N3ww&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Elegant interior design with premium finishes and custom furniture.'
     },
     {
       id: 4,
       title: 'Restaurant Renovation',
       category: 'Commercial',
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg',
+      image: 'https://images.unsplash.com/photo-1613274554329-70f997f5789f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBtb2Rlcm4lMjBkZXNpZ258ZW58MXx8fHwxNzU1MjcwNDYxfDA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Complete renovation creating an inviting dining atmosphere.'
     },
     {
       id: 5,
       title: 'Elegant Villa',
       category: 'Residential',
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg',
+      image: 'https://images.unsplash.com/photo-1740258662768-b46a3f3f0c06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwdmlsbGElMjBhcmNoaXRlY3R1cmV8ZW58MXx8fHwxNzU1MjcwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Traditional architecture with modern amenities and landscaping.'
     },
     {
       id: 6,
       title: 'Boutique Hotel',
       category: 'Commercial',
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg',
+      image: 'https://images.unsplash.com/photo-1693585576677-3635adad699d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3V0aXF1ZSUyMGhvdGVsJTIwbG9iYnklMjBkZXNpZ258ZW58MXx8fHwxNzU1MjcwNDY3fDA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Luxurious hospitality design with local cultural elements.'
     }
   ]

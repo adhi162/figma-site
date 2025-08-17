@@ -17,30 +17,30 @@ const Testimonials = () => {
       role: 'Homeowner',
       content: 'Archleve transformed our outdated home into a modern masterpiece. Their attention to detail and professional approach exceeded our expectations.',
       rating: 5,
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg'
+      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b647?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
     },
     {
       name: 'Michael Chen',
       role: 'Business Owner',
       content: 'The office renovation project was completed on time and within budget. The team\'s creativity and expertise created an inspiring workspace.',
       rating: 5,
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg'
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
     },
     {
       name: 'Emma Rodriguez',
       role: 'Interior Designer',
       content: 'Working with Archleve was a pleasure. Their construction team brought our design vision to life with exceptional craftsmanship.',
       rating: 5,
-      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg'
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
     }
   ]
 
   const clientLogos = [
-    { name: 'Urban Development Corp', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
-    { name: 'Luxury Homes Ltd', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
-    { name: 'Modern Spaces Inc', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
-    { name: 'Elite Properties', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
-    { name: 'Green Building Co', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' }
+    { name: 'Urban Development Corp', logo: 'https://via.placeholder.com/150x60/777f6d/ffffff?text=Urban+Dev' },
+    { name: 'Luxury Homes Ltd', logo: 'https://via.placeholder.com/150x60/968672/ffffff?text=Luxury+Homes' },
+    { name: 'Modern Spaces Inc', logo: 'https://via.placeholder.com/150x60/bc8c62/ffffff?text=Modern+Spaces' },
+    { name: 'Elite Properties', logo: 'https://via.placeholder.com/150x60/6b6755/ffffff?text=Elite+Properties' },
+    { name: 'Green Building Co', logo: 'https://via.placeholder.com/150x60/596057/ffffff?text=Green+Building' }
   ]
 
   return (

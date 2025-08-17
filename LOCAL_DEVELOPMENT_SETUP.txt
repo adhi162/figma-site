@@ -1,0 +1,165 @@
+ARCHLEVE WEBSITE - LOCAL DEVELOPMENT SETUP
+==========================================
+
+Follow these steps to set up and run the Archleve website locally on your machine.
+
+PREREQUISITES
+=============
+Make sure you have the following installed:
+- Node.js (version 16 or higher) - Download from https://nodejs.org/
+- npm (comes with Node.js) or yarn package manager
+- Git (for version control) - Download from https://git-scm.com/
+- VS Code (recommended) - Download from https://code.visualstudio.com/
+
+SETUP COMMANDS
+==============
+
+1. NAVIGATE TO PROJECT DIRECTORY
+   Open your terminal/command prompt and navigate to the project folder:
+
+   cd path/to/your/archleve-website
+
+2. INSTALL DEPENDENCIES
+   Run one of the following commands to install all required packages:
+
+   Using npm:
+   npm install
+
+   OR using yarn:
+   yarn install
+
+3. VERIFY INSTALLATION
+   Check if all dependencies were installed correctly:
+
+   npm list --depth=0
+
+   OR
+
+   yarn list --depth=0
+
+4. START DEVELOPMENT SERVER
+   Run the development server:
+
+   Using npm:
+   npm run dev
+
+   OR using yarn:
+   yarn dev
+
+5. OPEN IN BROWSER
+   The development server will start and display a URL (usually http://localhost:5173)
+   Open this URL in your web browser to view the website.
+
+DEVELOPMENT COMMANDS
+===================
+
+BUILD FOR PRODUCTION:
+npm run build
+OR
+yarn build
+
+PREVIEW PRODUCTION BUILD:
+npm run preview
+OR
+yarn preview
+
+LINT CODE:
+npm run lint
+OR
+yarn lint
+
+TYPE CHECK:
+npm run type-check
+OR
+yarn type-check
+
+VS CODE SETUP
+=============
+
+1. INSTALL RECOMMENDED EXTENSIONS
+   Install these VS Code extensions for better development experience:
+   - ES7+ React/Redux/React-Native snippets
+   - Tailwind CSS IntelliSense
+   - TypeScript Importer
+   - Prettier - Code formatter
+   - ESLint
+   - Auto Rename Tag
+
+2. OPEN PROJECT IN VS CODE
+   File > Open Folder > Select your project directory
+
+3. CONFIGURE VS CODE SETTINGS
+   Create or update .vscode/settings.json in your project root:
+   {
+     "editor.formatOnSave": true,
+     "editor.defaultFormatter": "esbenp.prettier-vscode",
+     "tailwindCSS.experimental.classRegex": [
+       ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+       ["className\\s*=\\s*[\"'`]([^\"'`]*)[\"'`]", "([^\"'`\\s]+)"]
+     ]
+   }
+
+TROUBLESHOOTING
+===============
+
+If you encounter issues:
+
+1. CLEAR NODE MODULES AND REINSTALL
+   rm -rf node_modules package-lock.json (or yarn.lock)
+   npm install (or yarn install)
+
+2. CLEAR VITE CACHE
+   rm -rf node_modules/.vite
+   npm run dev (or yarn dev)
+
+3. CHECK NODE VERSION
+   node --version
+   (Should be 16 or higher)
+
+4. VERIFY PORT AVAILABILITY
+   If port 5173 is in use, Vite will automatically use the next available port.
+   Check the terminal output for the correct URL.
+
+5. BROWSER CACHE
+   Hard refresh your browser (Ctrl+Shift+R or Cmd+Shift+R)
+   Or open in incognito/private mode
+
+PROJECT STRUCTURE
+=================
+- /components/ - React components
+- /styles/ - CSS and styling files
+- /components/ui/ - Reusable UI components (shadcn/ui)
+- App.tsx - Main application component
+- main.tsx - Application entry point
+- tailwind.config.js - Tailwind CSS configuration
+- vite.config.ts - Vite build configuration
+
+DEVELOPMENT WORKFLOW
+===================
+
+1. Make changes to your React components in the /components/ directory
+2. Styles are automatically compiled from /styles/globals.css
+3. The development server supports hot module replacement (HMR)
+4. Changes should be reflected immediately in your browser
+5. Check the browser console and terminal for any errors
+
+FEATURES INCLUDED
+================
+- Responsive design (desktop, tablet, mobile)
+- Scroll-triggered animations
+- Magnetic scroll effect on landing page
+- Fixed header with mobile hamburger menu
+- Custom Archleve brand colors
+- Modern typography with Inter font
+- Optimized images from Unsplash
+- Clean component architecture
+
+NEXT STEPS
+==========
+- The website is ready for development
+- All Archleve brand colors are configured
+- Scroll animations are implemented
+- Mobile responsiveness is built-in
+- Ready for deployment when needed
+
+For questions or issues, check the console output or refer to the documentation of the specific technologies used (React, Vite, Tailwind CSS).

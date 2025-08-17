@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Background Image with Parallax */}
       <div ref={parallaxRef} className="absolute inset-0">
         <ImageWithFallback
-          src="https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
           alt="Modern architecture and interior design"
           className="w-full h-full object-cover"
         />
@@ -49,7 +49,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-archleve-soft-white text-black hover:bg-archleve-soft-white hover:text-archleve-deep-forest px-8 py-4 text-lg font-semibold transition-all duration-300"
+              className="border-2 border-archleve-soft-white text-archleve-soft-white hover:bg-archleve-soft-white hover:text-archleve-deep-forest px-8 py-4 text-lg font-semibold transition-all duration-300"
             >
               Get Consultation
             </Button>
