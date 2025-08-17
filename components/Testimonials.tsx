@@ -15,46 +15,46 @@ const Testimonials = () => {
     {
       name: 'Sarah Johnson',
       role: 'Homeowner',
-      content: 'Archleve transformed our outdated home into a modern masterpiece. Their attention to detail and professional approach exceeded our expectations.',
+      content: 'Sthavia transformed our outdated home into a modern masterpiece. Their attention to detail and professional approach exceeded our expectations.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b647?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg'
     },
     {
       name: 'Michael Chen',
       role: 'Business Owner',
       content: 'The office renovation project was completed on time and within budget. The team\'s creativity and expertise created an inspiring workspace.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg'
     },
     {
       name: 'Emma Rodriguez',
       role: 'Interior Designer',
-      content: 'Working with Archleve was a pleasure. Their construction team brought our design vision to life with exceptional craftsmanship.',
+      content: 'Working with Sthavia was a pleasure. Their construction team brought our design vision to life with exceptional craftsmanship.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+      image: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg'
     }
   ]
 
   const clientLogos = [
-    { name: 'Urban Development Corp', logo: 'https://via.placeholder.com/150x60/777f6d/ffffff?text=Urban+Dev' },
-    { name: 'Luxury Homes Ltd', logo: 'https://via.placeholder.com/150x60/968672/ffffff?text=Luxury+Homes' },
-    { name: 'Modern Spaces Inc', logo: 'https://via.placeholder.com/150x60/bc8c62/ffffff?text=Modern+Spaces' },
-    { name: 'Elite Properties', logo: 'https://via.placeholder.com/150x60/6b6755/ffffff?text=Elite+Properties' },
-    { name: 'Green Building Co', logo: 'https://via.placeholder.com/150x60/596057/ffffff?text=Green+Building' }
+    { name: 'Urban Development Corp', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
+    { name: 'Luxury Homes Ltd', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
+    { name: 'Modern Spaces Inc', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
+    { name: 'Elite Properties', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
+    { name: 'Green Building Co', logo: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' }
   ]
 
   return (
-    <section id="feedback" className="py-16 md:py-24 bg-archleve-warm-beige overflow-hidden">
+    <section id="feedback" className="py-16 md:py-24 bg-sthavia-warm-beige overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div ref={headerAnimation.ref} className={`text-center mb-16 ${headerAnimation.className}`}>
-          <div className="w-12 h-0.5 bg-archleve-deep-forest mx-auto mb-6"></div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-archleve-deep-forest mb-6 leading-tight">
+          <div className="w-12 h-0.5 bg-sthavia-deep-forest mx-auto mb-6"></div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-sthavia-deep-forest mb-6 leading-tight">
             What Our
-            <span className="block font-medium text-archleve-charcoal">Clients Say</span>
+            <span className="block font-medium text-sthavia-charcoal">Clients Say</span>
           </h2>
-          <p className="text-lg text-archleve-charcoal/80 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied clients have to say about working with Archleve.
+          <p className="text-lg text-sthavia-charcoal/80 max-w-3xl mx-auto leading-relaxed">
+            Don't just take our word for it. Here's what our satisfied clients have to say about working with Sthavia.
           </p>
         </div>
 
@@ -63,10 +63,10 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className={`relative hover:shadow-xl transition-all duration-500 border-0 shadow-md group bg-archleve-soft-white hover:bg-archleve-cream ${getTestimonialClassName(index)}`}
+              className={`relative hover:shadow-xl transition-all duration-500 border-0 shadow-md group bg-sthavia-soft-white hover:bg-sthavia-cream ${getTestimonialClassName(index)}`}
             >
               <CardContent className="p-8">
-                <div className="absolute top-4 right-4 text-archleve-gold opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                <div className="absolute top-4 right-4 text-sthavia-gold opacity-20 group-hover:opacity-40 transition-opacity duration-300">
                   <Quote size={32} />
                 </div>
 
@@ -74,13 +74,13 @@ const Testimonials = () => {
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
-                      className="w-5 h-5 fill-archleve-gold text-archleve-gold transform group-hover:scale-110 transition-transform duration-300"
+                      className="w-5 h-5 fill-sthavia-gold text-sthavia-gold transform group-hover:scale-110 transition-transform duration-300"
                       style={{ transitionDelay: `${i * 50}ms` }}
                     />
                   ))}
                 </div>
 
-                <p className="text-archleve-charcoal/80 mb-6 leading-relaxed italic group-hover:text-archleve-deep-forest transition-colors duration-300">
+                <p className="text-sthavia-charcoal/80 mb-6 leading-relaxed italic group-hover:text-sthavia-deep-forest transition-colors duration-300">
                   "{testimonial.content}"
                 </p>
 
@@ -91,10 +91,10 @@ const Testimonials = () => {
                     className="w-12 h-12 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform duration-300"
                   />
                   <div>
-                    <h4 className="font-semibold text-archleve-deep-forest group-hover:text-archleve-gold transition-colors duration-300">
+                    <h4 className="font-semibold text-sthavia-deep-forest group-hover:text-sthavia-gold transition-colors duration-300">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm text-archleve-charcoal/70">
+                    <p className="text-sm text-sthavia-charcoal/70">
                       {testimonial.role}
                     </p>
                   </div>
@@ -105,9 +105,9 @@ const Testimonials = () => {
         </div>
 
         {/* Client Logos */}
-        <div className="border-t border-archleve-charcoal/20 pt-16">
+        <div className="border-t border-sthavia-charcoal/20 pt-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-archleve-deep-forest">
+            <h3 className="text-2xl font-semibold text-sthavia-deep-forest">
               Trusted by Industry Leaders
             </h3>
           </div>

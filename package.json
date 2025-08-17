@@ -1,7 +1,7 @@
 {
-  "name": "archleve-website",
+  "name": "sthavia-website",
   "version": "1.0.0",
-  "description": "Modern, responsive website for Archleve construction and interior design company",
+  "description": "Modern, responsive website for Sthavia construction and interior design company",
   "type": "module",
   "scripts": {
     "dev": "vite",

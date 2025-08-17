@@ -10,22 +10,22 @@ const About = () => {
   const statsAnimation = useScrollAnimation('animate-fade-in-up animate-delay-400')
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-archleve-charcoal overflow-hidden">
+    <section id="about" className="py-20 md:py-32 bg-sthavia-charcoal overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Text Content */}
           <div ref={textAnimation.ref} className={`space-y-8 ${textAnimation.className}`}>
             <div className="space-y-6">
-              <div className="w-12 h-0.5 bg-archleve-gold"></div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-archleve-soft-white leading-tight">
+              <div className="w-12 h-0.5 bg-sthavia-gold"></div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-sthavia-soft-white leading-tight">
                 About
-                <span className="block font-medium text-archleve-gold">Archleve</span>
+                <span className="block font-medium text-sthavia-gold">Sthavia</span>
               </h2>
             </div>
 
-            <div className="space-y-6 text-archleve-soft-white/80 leading-relaxed">
+            <div className="space-y-6 text-sthavia-soft-white/80 leading-relaxed">
               <p className="text-lg">
-                With over two decades of experience in architectural design and construction, Archleve has established itself as a leader in creating exceptional spaces that seamlessly blend functionality with aesthetic excellence.
+                With over two decades of experience in architectural design and construction, Sthavia has established itself as a leader in creating exceptional spaces that seamlessly blend functionality with aesthetic excellence.
               </p>
 
               <p className="text-base">
@@ -35,27 +35,27 @@ const About = () => {
 
             <div ref={statsAnimation.ref} className={`grid grid-cols-2 gap-8 pt-8 ${statsAnimation.className}`}>
               <div className="text-center group cursor-default">
-                <div className="text-4xl md:text-5xl font-light text-archleve-gold mb-3 group-hover:scale-105 transition-transform duration-300">500+</div>
-                <div className="text-archleve-soft-white/70 font-medium text-sm tracking-wide uppercase">Projects Completed</div>
+                <div className="text-4xl md:text-5xl font-light text-sthavia-gold mb-3 group-hover:scale-105 transition-transform duration-300">500+</div>
+                <div className="text-sthavia-soft-white/70 font-medium text-sm tracking-wide uppercase">Projects Completed</div>
               </div>
               <div className="text-center group cursor-default">
-                <div className="text-4xl md:text-5xl font-light text-archleve-gold mb-3 group-hover:scale-105 transition-transform duration-300">20+</div>
-                <div className="text-archleve-soft-white/70 font-medium text-sm tracking-wide uppercase">Years Experience</div>
+                <div className="text-4xl md:text-5xl font-light text-sthavia-gold mb-3 group-hover:scale-105 transition-transform duration-300">20+</div>
+                <div className="text-sthavia-soft-white/70 font-medium text-sm tracking-wide uppercase">Years Experience</div>
               </div>
             </div>
           </div>
 
           {/* Image */}
           <div ref={imageAnimation.ref} className={`relative ${imageAnimation.className}`}>
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-archleve-deep-forest/20 group">
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-sthavia-deep-forest/20 group">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1718209962486-4f91ce71886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjB0ZWFtJTIwY29uc3RydWN0aW9uJTIwd29ya2Vyc3xlbnwxfHx8fDE3NTUyNzA0MzN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Archleve construction team at work"
+                src="https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg"
+                alt="Sthavia construction team at work"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-archleve-gold/20 rounded-full backdrop-blur-sm"></div>
-            <div className="absolute -top-6 -left-6 w-12 h-12 border border-archleve-gold/30 rotate-45 backdrop-blur-sm bg-archleve-primary-green/30"></div>
+            <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-sthavia-gold/20 rounded-full backdrop-blur-sm"></div>
+            <div className="absolute -top-6 -left-6 w-12 h-12 border border-sthavia-gold/30 rotate-45 backdrop-blur-sm bg-sthavia-primary-green/30"></div>
           </div>
         </div>
       </div>

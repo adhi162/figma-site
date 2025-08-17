@@ -1,7 +1,7 @@
-ARCHLEVE WEBSITE - LOCAL DEVELOPMENT SETUP
+STHAVIA WEBSITE - LOCAL DEVELOPMENT SETUP
 ==========================================
 
-Follow these steps to set up and run the Archleve website locally on your machine.
+Follow these steps to set up and run the Sthavia website locally on your machine.
 
 PREREQUISITES
 =============
@@ -17,7 +17,7 @@ SETUP COMMANDS
 1. NAVIGATE TO PROJECT DIRECTORY
    Open your terminal/command prompt and navigate to the project folder:
 
-   cd path/to/your/archleve-website
+   cd path/to/your/sthavia-website
 
 2. INSTALL DEPENDENCIES
    Run one of the following commands to install all required packages:
@@ -149,7 +149,7 @@ FEATURES INCLUDED
 - Scroll-triggered animations
 - Magnetic scroll effect on landing page
 - Fixed header with mobile hamburger menu
-- Custom Archleve brand colors
+- Custom Sthavia brand colors
 - Modern typography with Inter font
 - Optimized images from Unsplash
 - Clean component architecture
@@ -157,7 +157,7 @@ FEATURES INCLUDED
 NEXT STEPS
 ==========
 - The website is ready for development
-- All Archleve brand colors are configured
+- All Sthavia brand colors are configured
 - Scroll animations are implemented
 - Mobile responsiveness is built-in
 - Ready for deployment when needed

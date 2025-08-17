@@ -49,13 +49,13 @@ export default function App() {
   }, [showMain]);
 
   return (
-    <div className="min-h-screen bg-archleve-deep-forest font-['Inter']">
+    <div className="min-h-screen bg-sthavia-deep-forest font-inter">
       {/* Header */}
       <Header isScrolled={showMain} />
 
       {/* Landing Page - only show when main content is hidden */}
       {!showMain && (
-        <div className="fixed inset-0 z-30 bg-archleve-deep-forest">
+        <div className="fixed inset-0 z-30 bg-sthavia-deep-forest">
           <Landing />
         </div>
       )}

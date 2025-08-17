@@ -12,29 +12,29 @@ const Hero = () => {
   const parallaxRef = useParallax(0.3)
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-archleve-deep-forest">
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-sthavia-deep-forest">
       {/* Background Image with Parallax */}
       <div ref={parallaxRef} className="absolute inset-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          src="https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg"
           alt="Modern architecture and interior design"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-archleve-deep-forest/70"></div>
+        <div className="absolute inset-0 bg-sthavia-deep-forest/70"></div>
       </div>
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={titleAnimation.ref} className={titleAnimation.className}>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-archleve-soft-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-sthavia-soft-white mb-6 leading-tight">
             Crafting Spaces that
-            <span className="text-archleve-gold block">Inspire Living</span>
+            <span className="text-sthavia-gold block">Inspire Living</span>
           </h1>
         </div>
 
         <div ref={subtitleAnimation.ref} className={subtitleAnimation.className}>
-          <p className="text-lg md:text-xl lg:text-2xl text-archleve-soft-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            At Archleve, we transform your vision into reality through innovative construction and exquisite interior design solutions.
+          <p className="text-lg md:text-xl lg:text-2xl text-sthavia-soft-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            At Sthavia, we transform your vision into reality through innovative construction and exquisite interior design solutions.
           </p>
         </div>
 
@@ -42,14 +42,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="bg-archleve-gold hover:bg-archleve-gold/90 text-archleve-soft-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              className="bg-sthavia-gold hover:bg-sthavia-gold/90 text-sthavia-soft-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               Explore Our Work
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-archleve-soft-white text-archleve-soft-white hover:bg-archleve-soft-white hover:text-archleve-deep-forest px-8 py-4 text-lg font-semibold transition-all duration-300"
+              className="border-2 border-sthavia-soft-white text-sthavia-soft-white hover:bg-sthavia-soft-white hover:text-sthavia-deep-forest px-8 py-4 text-lg font-semibold transition-all duration-300"
             >
               Get Consultation
             </Button>

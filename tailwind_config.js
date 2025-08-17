@@ -9,18 +9,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Archleve Brand Colors
-        'archleve-primary-green': '#485954',
-        'archleve-sage': '#8b9d83',
-        'archleve-warm-beige': '#d4c4a8',
-        'archleve-cream': '#f7f3eb',
-        'archleve-deep-forest': '#2c3530',
-        'archleve-olive': '#6b7565',
-        'archleve-gold': '#b8a082',
-        'archleve-stone': '#9ca394',
-        'archleve-charcoal': '#3a3f3b',
-        'archleve-soft-white': '#fefefe',
-        'archleve-neutral': '#8e9089',
+        // Sthavia Brand Colors
+        'sthavia-primary-green': '#485954',
+        'sthavia-sage': '#8b9d83',
+        'sthavia-warm-beige': '#d4c4a8',
+        'sthavia-cream': '#f7f3eb',
+        'sthavia-deep-forest': '#2c3530',
+        'sthavia-olive': '#6b7565',
+        'sthavia-gold': '#b8a082',
+        'sthavia-stone': '#9ca394',
+        'sthavia-charcoal': '#3a3f3b',
+        'sthavia-soft-white': '#fefefe',
+        'sthavia-neutral': '#8e9089',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

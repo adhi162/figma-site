@@ -1,0 +1,211 @@
+STHAVIA WEBSITE - TROUBLESHOOTING GUIDE
+========================================
+
+This file contains solutions for common issues when setting up and running the Sthavia website locally.
+
+LATEST UPDATE: STHAVIA COLOR UTILITIES FIXED
+==============================================
+ISSUE: "Cannot apply unknown utility class: bg-sthavia-deep-forest" error
+
+SOLUTION APPLIED:
+✓ Updated Tailwind config to use direct hex color values instead of CSS variables for reliability
+✓ Added comprehensive safelist with all Sthavia color variants including opacity and hover states
+✓ Fixed globals.css to avoid conflicts with Tailwind utilities in @apply directives
+✓ Added explicit content paths to ensure all components are scanned for class names
+✓ Included all necessary opacity variants and group-hover states in safelist
+
+STEP-BY-STEP SETUP (AFTER LATEST FIX)
+====================================
+
+1. CLEAR TAILWIND CACHE
+   rm -rf node_modules/.vite
+   rm -rf .next (if using Next.js)
+
+2. REINSTALL DEPENDENCIES
+   rm -rf node_modules package-lock.json
+   npm install
+
+3. RESTART DEVELOPMENT SERVER
+   npm run dev
+
+4. VERIFY IN BROWSER
+   Open http://localhost:5173 in your browser
+   All Sthavia colors should now be working
+
+STHAVIA COLOR REFERENCE
+========================
+✓ bg-sthavia-deep-forest (#2c3530) - Main background
+✓ bg-sthavia-sage (#8b9d83) - Sage green accent
+✓ bg-sthavia-warm-beige (#d4c4a8) - Warm beige tone
+✓ bg-sthavia-cream (#f7f3eb) - Cream highlight
+✓ bg-sthavia-gold (#b8a082) - Gold accent
+✓ bg-sthavia-soft-white (#fefefe) - Soft white
+✓ bg-sthavia-charcoal (#3a3f3b) - Charcoal
+✓ bg-sthavia-olive (#6b7565) - Olive green
+✓ bg-sthavia-stone (#9ca394) - Stone gray
+✓ bg-sthavia-neutral (#8e9089) - Neutral gray
+✓ bg-sthavia-primary-green (#485954) - Primary green
+
+COMMON ISSUES & SOLUTIONS
+========================
+
+ISSUE 1: Sthavia Colors Not Working
+SOLUTION:
+✓ FIXED - Colors now use direct hex values in Tailwind config
+✓ All color utilities are included in safelist
+✓ Clear cache: rm -rf node_modules/.vite && npm run dev
+
+ISSUE 2: PostCSS/Tailwind Configuration Errors
+SOLUTION:
+- Ensure tailwind.config.js exists in project root
+- Ensure postcss.config.js exists in project root
+- Verify @tailwind directives are present in globals.css
+
+ISSUE 3: Module Not Found Errors
+SOLUTION:
+npm install
+# If that doesn't work:
+rm -rf node_modules package-lock.json
+npm install
+
+ISSUE 4: TypeScript Errors
+SOLUTION:
+npm run type-check
+# Fix any TypeScript errors shown
+
+ISSUE 5: Port Already in Use
+SOLUTION:
+# Kill process using port 5173
+npx kill-port 5173
+# Then restart
+npm run dev
+
+ISSUE 6: Vite Cache Issues
+SOLUTION:
+rm -rf node_modules/.vite
+npm run dev
+
+ISSUE 7: Font Loading Issues
+SOLUTION:
+# Check internet connection for Google Fonts
+# Verify globals.css has the correct @import statement
+
+VERIFICATION CHECKLIST
+=====================
+
+✓ Node.js version 16+ installed
+✓ npm or yarn package manager available
+✓ All dependencies installed successfully
+✓ No TypeScript compilation errors
+✓ Tailwind CSS configuration files present
+✓ Globals.css contains @tailwind directives and proper base styles
+✓ Development server starts without errors
+✓ Website loads at http://localhost:5173
+✓ ALL Sthavia brand colors are visible and working
+✓ Scroll animations work properly
+✓ Mobile hamburger menu functions
+✓ No "unknown utility class" errors in console
+
+TESTING COLORS
+==============
+
+You can use the ColorTest component to verify all colors are working:
+
+1. Import ColorTest from './components/ColorTest'
+2. Add <ColorTest /> to your App component temporarily
+3. Check that all color swatches display correctly
+4. Remove the component after testing
+
+PROJECT STRUCTURE VERIFICATION
+==============================
+
+Required files:
+✓ package.json (project configuration)
+✓ vite.config.ts (Vite build configuration)
+✓ tsconfig.json (TypeScript configuration)
+✓ tailwind.config.js (Tailwind CSS configuration with fixed Sthavia colors)
+✓ postcss.config.js (PostCSS configuration)
+✓ index.html (HTML entry point)
+✓ main.tsx (React entry point)
+✓ App.tsx (Main application component)
+✓ styles/globals.css (Global styles with Tailwind directives and fixed base styles)
+✓ public/favicon.svg (Website favicon)
+
+DEVELOPMENT WORKFLOW
+===================
+
+1. Make changes to React components
+2. Browser automatically refreshes (Hot Module Replacement)
+3. Check browser console for any errors (should be no color errors)
+4. Check terminal for build errors
+5. Test responsive design at different screen sizes
+6. Verify Sthavia brand colors are applied correctly
+
+PERFORMANCE OPTIMIZATION
+========================
+
+1. PRODUCTION BUILD
+   npm run build
+
+2. PREVIEW PRODUCTION BUILD
+   npm run preview
+
+3. ANALYZE BUNDLE SIZE
+   # Install bundle analyzer
+   npm install --save-dev vite-bundle-analyzer
+   # Add to vite.config.ts if needed
+
+DEPLOYMENT PREPARATION
+=====================
+
+1. Run production build
+   npm run build
+
+2. Test production build locally
+   npm run preview
+
+3. Verify all features work in production mode
+4. Check that all images load correctly
+5. Test on multiple devices and browsers
+6. Verify all Sthavia colors render correctly in production
+
+FILES UPDATED IN LATEST FIX
+===========================
+✓ /tailwind.config.js - Fixed color definitions and comprehensive safelist
+✓ /styles/globals.css - Fixed base layer conflicts
+✓ /App.tsx - Updated to use proper Tailwind classes
+✓ /components/ColorTest.tsx - Created for color verification
+✓ /LOCAL_DEVELOPMENT_TROUBLESHOOTING.txt - Updated with latest fixes
+
+FINAL VERIFICATION COMMANDS
+===========================
+
+# Check Node version
+node --version
+
+# Check npm version
+npm --version
+
+# Verify project dependencies
+npm list --depth=0
+
+# Check for outdated packages
+npm outdated
+
+# Run linting
+npm run lint
+
+# Type check
+npm run type-check
+
+# Build for production
+npm run build
+
+If you continue to experience issues after following this guide, check:
+1. Internet connection for external resources
+2. Antivirus software blocking file access
+3. File/folder permissions
+4. Available disk space
+5. System resources (RAM/CPU)
+
+The Sthavia color utilities should now work perfectly throughout the application!

@@ -43,16 +43,16 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-archleve-primary-green overflow-hidden">
+    <section id="services" className="py-16 md:py-24 bg-sthavia-primary-green overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div ref={headerAnimation.ref} className={`text-center mb-16 ${headerAnimation.className}`}>
-          <div className="w-12 h-0.5 bg-archleve-gold mx-auto mb-6"></div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-archleve-soft-white mb-6 leading-tight">
+          <div className="w-12 h-0.5 bg-sthavia-gold mx-auto mb-6"></div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-sthavia-soft-white mb-6 leading-tight">
             Our
-            <span className="block font-medium text-archleve-gold">Services</span>
+            <span className="block font-medium text-sthavia-gold">Services</span>
           </h2>
-          <p className="text-lg text-archleve-soft-white/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-sthavia-soft-white/80 max-w-3xl mx-auto leading-relaxed">
             From concept to completion, we offer comprehensive solutions for all your construction and design needs.
           </p>
         </div>
@@ -62,18 +62,18 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className={`group hover:shadow-xl transition-all duration-500 hover:transform hover:-translate-y-2 border-0 shadow-md bg-archleve-warm-beige hover:bg-archleve-gold ${getItemClassName(index)}`}
+              className={`group hover:shadow-xl transition-all duration-500 hover:transform hover:-translate-y-2 border-0 shadow-md bg-sthavia-warm-beige hover:bg-sthavia-gold ${getItemClassName(index)}`}
             >
               <CardContent className="p-8 text-center">
                 <div className="mb-6">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-archleve-deep-forest rounded-full group-hover:bg-archleve-deep-forest/90 transition-all duration-500 group-hover:rotate-12">
-                    <service.icon className="w-8 h-8 text-archleve-gold group-hover:text-archleve-soft-white transition-colors duration-300" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-sthavia-deep-forest rounded-full group-hover:bg-sthavia-deep-forest/90 transition-all duration-500 group-hover:rotate-12">
+                    <service.icon className="w-8 h-8 text-sthavia-gold group-hover:text-sthavia-soft-white transition-colors duration-300" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-archleve-deep-forest mb-4 group-hover:text-archleve-soft-white transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-sthavia-deep-forest mb-4 group-hover:text-sthavia-soft-white transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-archleve-charcoal/80 leading-relaxed group-hover:text-archleve-soft-white/90 transition-colors duration-300">
+                <p className="text-sthavia-charcoal/80 leading-relaxed group-hover:text-sthavia-soft-white/90 transition-colors duration-300">
                   {service.description}
                 </p>
               </CardContent>
