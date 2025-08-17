@@ -112,7 +112,7 @@ export const useStaggeredAnimation = (
 
   return {
     containerRef,
-    getItemClassName: (index: number) => 
+    getItemClassName: (index: number) =>
       `animate-hidden ${visibleItems[index] ? animationClass : ''}`,
     allVisible: visibleItems.every(item => item)
   }
